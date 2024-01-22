@@ -4,7 +4,7 @@
             <div class="mb-5">
                     <h2 class="center">Free & Open Mentoring Session</h2>
             </div>
-
+<!-- 
             <div>
                 <div class="service-grid mb-5" v-for="(i, index) in mentoring" :key="index">
                     <MentoringComponent :image="i.image" :dateTime="i.dateTime" :title="i.title"
@@ -14,7 +14,7 @@
                             :Description="a.description" />
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </div>
 </template>
@@ -22,12 +22,12 @@
 <script>
 import MentoringComponent from '@/components/MentoringComponent.vue';
 import MentoringDescription from '@/components/MentoringDescription.vue';
-import {mentoring} from '@/data/mentoring.js'
+/* import {mentoring} from '@/data/mentoring.js' */
 export default {
     layout: 'web',
     data() {
         return {
-            mentoring
+            /* mentoring */
         }
     },
     components: { MentoringComponent, MentoringDescription }

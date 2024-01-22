@@ -4,15 +4,15 @@
             <h1 class="mb-3">Services</h1>
         </div>
         <div class="service-grid">
-            <Services v-for="(i, index) in services" :key="index"  :image="i.image" :title="i.title"/>
+           <!--  <Services v-for="(i, index) in services" :key="index"  :image="i.image" :title="i.title"/> -->
         </div>
     </section>
 </template>
 
 <script>
-import Services from '../../components/Services.vue';
+//import Services from '../../components/Services.vue';
 
-const services = [
+/* const services = [
     {
         image: require(`@/assets/icons/services/agile.svg`),
         title: 'Agile Development Consulting',
@@ -30,16 +30,16 @@ const services = [
         title: 'Workflow Development',
     },
 
-]
+] */
 export default {
     layout: 'web',
     data() {
         return {
-            services: services
+           /*  services: services */
         }
     },
     methods: {},
-    components: { Services }
+    components: { /* Services */ }
 }
 </script>
 

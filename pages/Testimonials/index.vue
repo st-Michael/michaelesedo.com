@@ -4,23 +4,23 @@
       <h2 class="mb-5">Some feedbacks</h2>
     </div>
     <div class="testimonials-grid">
-      <div class="testimonials-item glow" v-for="(item, index) in testimonials" :key="index">
+     <!--  <div class="testimonials-item glow" v-for="(item, index) in testimonials" :key="index">
         <img loading="lazy" class="mb-1" :src="item.image" />
         <h3 class="mb-1">{{ item.name }}</h3>
         <p class="mb-1">{{ item.text }}</p>
         <p class="company">{{ item.company }}</p>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
 
 <script>
-import { testimonials } from '@/data/testimonials.js';
+/* import { testimonials } from '@/data/testimonials.js'; */
 export default {
   layout: 'web',
   data() {
     return {
-      testimonials: testimonials,
+     /*  testimonials: testimonials, */
     };
   },
 };

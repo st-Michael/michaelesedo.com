@@ -12,7 +12,7 @@
 <script>
 import Hero from "./index/Hero.vue";
 import Who from "./index/Who.vue";
-import Service from './index/Service.vue'
+import Service from './index/Servic.vue'
 import Portfolio from './index/Portfolio.vue'
 import Product from "./index/Product.vue"
 import Achievments from "./index/Achievments.vue";
