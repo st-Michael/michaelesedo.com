@@ -175,6 +175,7 @@ export default {
 .menu-wrapper {
   height: 80px;
   width: 100%;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
