@@ -19,11 +19,12 @@ h4,
 h5,
 h6 {
   font-weight: 300 !important;
-  font-family: "TWK Everett", sans-serif;
+  font-family: "Archivo TWK Everett", sans-serif;
 }
 
 h1 {
   font-size: 55px;
+  font-weight: 600 !important;
 }
 
 h1 span {

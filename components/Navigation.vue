@@ -12,12 +12,12 @@
                 <ul>
                 <li>
                  <!--  <nuxt-link to="http://localhost:3000/#portfolio">Portfolio</nuxt-link> -->
-                 <a  href="https://michaelesedo-com.pages.dev/#services">Services</a>
+                 <a  href="https://michaelesedo.com/#services">Services</a>
                 </li>
                 <li class="item">
                   <!-- <nuxt-link to="#services">Services</nuxt-link> -->
                  
-                  <a  href="https://michaelesedo-com.pages.dev/#portfolio">Portfolio</a>
+                  <a  href="https://michaelesedo.com/#portfolio">Portfolio</a>
                 </li>
                 <li class="item ">
                   <nuxt-link to="/consulting">Consulting</nuxt-link>
@@ -46,8 +46,8 @@
         <div class="menu">
           <!-- <a class="item" href="#portfolio">Portfolio</a>
           <a class="item" href="#services">Services</a> -->
-          <a class="item" href="https://michaelesedo-com.pages.dev/#services">Services</a>
-          <a class="item" href="https://michaelesedo-com.pages.dev/#portfolio">Portfolio</a>
+          <a class="item" href="https://michaelesedo.com/#services">Services</a>
+          <a class="item" href="https://michaelesedo.com/#portfolio">Portfolio</a>
           <a class="item" href="/consulting">Consulting</a>
           <a class="item" target="_blank" href="https://techiesgarage.substack.com/p/unified-modeling-language-a-techies"> Blog</a>
           <a class="item" target="_blank" href="https://topuniverse.org/coaching/cohort">Learn for free</a>
@@ -178,8 +178,11 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--input-color);
+ /*  background-color: var(--input-color); */
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(197, 192, 192, 0.233);
+  padding: 30px;
+  border-radius: 50px;
 }
 
 .menu {

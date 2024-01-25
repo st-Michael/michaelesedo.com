@@ -1,12 +1,16 @@
 <template>
   <div>
 
-    <img class="herobg" src="@/assets/images/hero/herobg.png" />
-    <!-- <div class="path1"></div> -->
+    <TransitionGroup name="list" tag="div">
+      <div v-for="i in [currentIndex]" :key="i">
+          <img class="herobg" :src="currentImg" />
+      </div>
+    </TransitionGroup>
+
     <section class="mt-2 hero">
       <div class="spin">
         <!-- <img class="avatar-wrapper" src="@/assets/images/rotate.svg" /> -->
-        <img loading="lazy" class="avatar" src="@/assets/images/avatar/me.png" />
+        <img loading="lazy" class="avatar" :src="me" />
       </div>
 
       <div>
@@ -37,6 +41,49 @@
     </section>
   </div>
 </template>
+
+<script>
+import img1 from "@/assets/images/hero/herobg.png"
+import img2 from "@/assets/images/hero/herobgc.png"
+import me from "@/assets/images/avatar/me.png"
+
+const images = [ img1, img2]
+
+export default{
+  data() {
+    return {
+      images: images,
+      timer: null,
+      currentIndex: 0,
+      me
+    }
+  },
+  mounted: function() {
+    this.startSlide();
+  },
+
+  methods: {
+    startSlide: function() {
+      this.timer = setInterval(this.next, 4000);
+    },
+
+    next: function() {
+      this.currentIndex += 1;
+    },
+    prev: function() {
+      this.currentIndex -= 1;
+    }
+  },
+
+  computed: {
+    currentImg: function() {
+      return this.images[Math.abs(this.currentIndex) % this.images.length];
+    }
+  }
+};
+
+
+</script>
 
 <style scoped>
 .hero {
@@ -250,39 +297,12 @@ p {
   }
 }
 
-.bringtofront {
-  position: absolute;
-  z-index: 99;
-  top: 50px;
-  left: 50px;
+.list-enter-active,
+.list-leave-active {
+  transition: opacity 5s ease;
 }
-
-.bringtofront {
-  color: white;
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
 }
-
-
-.glow:before {
-  content: "";
-  background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  background-size: 50%;
-  z-index: -1;
-  filter: blur(100px);
-  width: calc(50% + 0px);
-  height: calc(50% + 0px);
-  animation: glowing 0s linear infinite;
-  opacity: 1;
-  border-radius: var(--border-radius);
-}</style>
+</style>
