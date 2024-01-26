@@ -7,7 +7,7 @@
       </div>
     </TransitionGroup>
 
-    <section class="mt-2 hero">
+    <section class=" hero">
       <div class="spin">
         <!-- <img class="avatar-wrapper" src="@/assets/images/rotate.svg" /> -->
         <img loading="lazy" class="avatar" :src="me" />
@@ -94,7 +94,7 @@ export default{
   flex-direction: row-reverse;
   gap: 20px;
   position: relative;
-  height: 80vh;
+  height: 71vh;
   margin-top: 140px;
 }
 
@@ -123,6 +123,7 @@ export default{
   height: 100%;
   -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
   filter: blur(10px);
+  margin: 0;
  
 }
 
@@ -224,8 +225,12 @@ p {
     display: grid;
     position: relative;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    height: 100vh;
+    height: auto;
     margin-top: 30px;
+  }
+
+  .herobg{
+    height: 100%;
   }
 
   .hero .spin {

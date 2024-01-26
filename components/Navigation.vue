@@ -255,6 +255,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(197, 192, 192, 0.233);
+    padding: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
   }
 
   .user-details {
@@ -271,6 +276,7 @@ export default {
     height: 100vh;
     width: 100%;
     gap: 20px;
+  
   }
 
   .hidden {
