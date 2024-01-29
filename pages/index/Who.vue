@@ -2,7 +2,8 @@
   <div class="who">
     <section>
       <p class="mb-3 text-black">who am i?</p>
-      <h1 class="text-black">A Software Engineer with a passion for solving problems and innovating on existing solutions using AI and it's increasingly reliable technologies.</h1>
+      <h1 class="text-black">Solving problems is one of man's greater purpose in the journey of life, and this is  a delight to me as a person. I see software engineering as one of those means that helps us reach that purpose of problem solving. <br>
+       </h1>
   </section>
   </div>
 </template>
