@@ -28,8 +28,8 @@
             Github
           </a>
         </div>
-        <h1 class="mb-3">Michael <br> Esedo.</h1>
-        <p class="mb-6">Software Engineer | SaaS Infrastructure | Generative AI Enthusiast / Engineer</p>
+        <h1 class="mb-3 text-highlight">Michael <br> Esedo.</h1>
+        <p class="mb-6">Solutions Architecht | Software Engineer | SaaS Infrastructure | Generative AI Enthusiast / Engineer</p>
         <div class="button-flex mb-3 cta">
           <a  href="/consulting">
             Consultation 
@@ -133,15 +133,17 @@ export default{
 }
 
 .spin {
+
   height: calc(14rem);
   width: calc(14rem);
- /*  position: absolute;
-  top: 10px;
+/*   position: sticky;
+  top: 100px;
   left: 10px; */
 
 }
 
 .avatar {
+  position: sticky;
   border-radius: 90px;
   object-position: center;
   padding: 30px;
