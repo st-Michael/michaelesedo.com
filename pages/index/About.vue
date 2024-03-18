@@ -7,7 +7,7 @@
         </h2>
          <p>
                         
-            With over 8 years in software engineering and a strong foundation in Computer Science, I am currently expanding my expertise through constant learning. In the last 2 years, I've delved into Solutions Architecture, broadening my skills. My current interests include Generative AI, Machine Learning, and the business applications of Artificial Intelligence.        </p>
+            With over 7+ years in software engineering and a strong foundation in Computer Science, I am currently expanding my expertise through constant learning. In the last 2 years, I've delved into Solutions Architecture, broadening my skills. My current interests include Generative AI, Machine Learning, and the business applications of Artificial Intelligence.        </p>
     </section>
     </div>
   </template>
