@@ -28,7 +28,7 @@
             Github
           </a>
         </div>
-        <h1 class="mb-3 gradient-text text-highlight">Michael <br> Esedo.</h1>
+        <h1 class="mb-3 gradient-text">Michael <br> Esedo.</h1>
         <p class="mb-6">Solutions Architecht | Software Engineer | SaaS Infrastructure | Generative AI Enthusiast / Engineer</p>
         <div class="button-flex mb-3 cta">
           <a  href="/consulting">
@@ -292,6 +292,12 @@ p {
     line-height: 1.2;
     font-size: 50px;
   }
+
+  .gradient-text {
+    font-size: 80px;
+    line-height: 1.2;
+
+}
 
   h3 {
     width: 100%;
