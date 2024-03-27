@@ -28,7 +28,7 @@
             Github
           </a>
         </div>
-        <h1 class="mb-3 text-highlight">Michael <br> Esedo.</h1>
+        <h1 class="mb-3 gradient-text text-highlight">Michael <br> Esedo.</h1>
         <p class="mb-6">Solutions Architecht | Software Engineer | SaaS Infrastructure | Generative AI Enthusiast / Engineer</p>
         <div class="button-flex mb-3 cta">
           <a  href="/consulting">
@@ -151,6 +151,44 @@ export default{
   height: 100%;
   width: 100%;
 }
+
+
+.gradient-text {
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    font-size: 180px;
+    line-height: .9;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.gradient-text {
+    content: '';
+    z-index: -1;
+    background: linear-gradient(45deg, #696169, #f7cef3, #570d57, #8672a5, #eef1f0, #d0d7e2, #ffffff);
+    background-size: 200% 200%;
+    animation: textFlow 10s ease infinite;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes textFlow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
 
 .avatar-wrapper {
   position: absolute;
